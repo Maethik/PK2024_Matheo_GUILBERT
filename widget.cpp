@@ -60,6 +60,4 @@ void widget::removePokemon()
 }
 
 void widget::endButton()
-{
-
-}
+{}
