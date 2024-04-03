@@ -11,14 +11,17 @@ CONFIG += c++17
 SOURCES += \
     home.cpp \
     main.cpp \
+    managewindows.cpp \
     widget.cpp
 
 HEADERS += \
     home.h \
+    managewindows.h \
     widget.h
 
 FORMS += \
     home.ui \
+    managewindows.ui \
     widget.ui
 
 # Default rules for deployment.

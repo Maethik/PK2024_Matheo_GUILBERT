@@ -4,6 +4,8 @@
 #include <QWidget>
 #include <QtSql/QSqlDatabase>
 #include <QtSql/QSqlTableModel>
+#include <QStackedWidget>
+#include <QPushButton>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class widget; }
@@ -17,6 +19,8 @@ public:
     widget(QWidget *parent = nullptr);
     ~widget();
 
+    QPushButton *getEndButton();
+
 private:
     Ui::widget *ui;
 
@@ -27,6 +31,5 @@ public slots:
     void addPokemon();
     void removePokemon();
     void saveDB();
-    void endButton();
 };
 #endif // WIDGET_H

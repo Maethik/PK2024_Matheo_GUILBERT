@@ -2,6 +2,8 @@
 #define HOME_H
 
 #include <QWidget>
+#include <QStackedWidget>
+#include <QPushButton>
 
 namespace Ui {
 class home;
@@ -15,11 +17,10 @@ public:
     explicit home(QWidget *parent = nullptr);
     ~home();
 
+    QPushButton *getManagePKButton();
+
 private:
     Ui::home *ui;
-
-public slots:
-    void openManageWindow();
 };
 
 #endif // HOME_H

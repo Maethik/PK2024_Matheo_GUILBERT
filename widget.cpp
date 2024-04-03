@@ -1,5 +1,6 @@
 #include "widget.h"
 #include "ui_widget.h"
+#include "home.h"
 
 widget::widget(QWidget *parent)
     : QWidget(parent)
@@ -59,5 +60,7 @@ void widget::removePokemon()
     saveDB();
 }
 
-void widget::endButton()
-{}
+QPushButton *widget::getEndButton()
+{
+    return ui->endButton;
+}

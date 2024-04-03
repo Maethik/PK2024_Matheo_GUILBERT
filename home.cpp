@@ -2,14 +2,14 @@
 #include "ui_home.h"
 #include "widget.h"
 
+#include <QStackedWidget>
+#include <QPushButton>
+
 home::home(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::home)
 {
     ui->setupUi(this);
-
-    widget *w = new widget;
-    ui->stackedWidget->insertWidget(1, w);
 }
 
 home::~home()
@@ -17,7 +17,7 @@ home::~home()
     delete ui;
 }
 
-void home::openManageWindow()
+QPushButton *home::getManagePKButton()
 {
-    ui->stackedWidget->setCurrentIndex(1);
+    return ui->managePokemonsButton;
 }
